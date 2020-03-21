@@ -6,11 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
 import com.example.shopitee.CartAdapter.CartViewHolder
-import com.example.shopitee.db.ShopiteeDatabase
+import com.example.shopitee.models.ItemCartModel
 import kotlinx.android.synthetic.main.cart_item.view.*
-import kotlinx.coroutines.runBlocking
 
 class CartAdapter(private var dummyItems: List<ItemCartModel>) : RecyclerView.Adapter<CartViewHolder>() {
 

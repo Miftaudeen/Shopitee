@@ -15,7 +15,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager.widget.ViewPager
 import androidx.viewpager.widget.ViewPager.OnPageChangeListener
-import com.example.shopitee.HomePageModel
+import com.example.shopitee.models.HomePageModel
+import com.example.shopitee.models.SliderModel
 import java.util.*
 
 class HomePageAdapter(private val homePageModelList: List<HomePageModel>) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {

@@ -3,13 +3,16 @@ package com.example.shopitee;
 
 import android.os.Bundle;
 
-import androidx.constraintlayout.solver.widgets.ConstraintAnchor;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.example.shopitee.models.CategoryModel;
+import com.example.shopitee.models.HomePageModel;
+import com.example.shopitee.models.SliderModel;
 
 import java.util.ArrayList;
 import java.util.List;

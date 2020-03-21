@@ -1,7 +1,8 @@
-package com.example.shopitee
+package com.example.shopitee.models
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import com.example.shopitee.R
 import java.util.*
 
 @Entity(tableName = "cart_table")

@@ -8,6 +8,43 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:179231326746:android:68185a11b1f65976e187a3",
+        "android_client_info": {
+          "package_name": "com.example.shopitee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "179231326746-q4edlkjjs9temrcplc1du4ko58msvr7j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.shopitee",
+            "certificate_hash": "09c2e5c87291de013de83d487b9a5c1a94648045"
+          }
+        },
+        {
+          "client_id": "179231326746-46orgs6ltncmc99g53593ss2af04ummr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADvUdaRP41TaHGCsTD3zXFzm87Nd6dst4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "179231326746-46orgs6ltncmc99g53593ss2af04ummr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:179231326746:android:788f37b3b29ecff4e187a3",
         "android_client_info": {
           "package_name": "com.example.tailorcom"

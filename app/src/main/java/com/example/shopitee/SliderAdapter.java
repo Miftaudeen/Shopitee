@@ -10,6 +10,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.example.shopitee.models.SliderModel;
+
 import java.util.List;
 
 public class SliderAdapter extends PagerAdapter {

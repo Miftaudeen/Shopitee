@@ -1,4 +1,4 @@
-package com.example.shopitee;
+package com.example.shopitee.models;
 
 public class CategoryModel {
     private String categoryIconLink;
