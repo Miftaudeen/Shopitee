@@ -1,4 +1,4 @@
-package com.example.tailorcom;
+package com.example.shopitee;
 
 import org.junit.Test;
 

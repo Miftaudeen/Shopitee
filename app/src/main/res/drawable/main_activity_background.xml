@@ -6,7 +6,7 @@
         </shape>
     </item>
     <item>
-        <bitmap android:src="@mipmap/llll" android:gravity="center"/>
+        <bitmap android:src="@drawable/app_logo" android:gravity="center"/>
     </item>
 
 </layer-list>

@@ -8,7 +8,7 @@
     android:background="@color/colorPrimary"
     tools:context=".SignInFragment">
 
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -31,7 +31,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="6dp"
             android:layout_marginBottom="8dp"
-            android:src="@mipmap/llll"
+            android:src="@drawable/app_logo"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -177,7 +177,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/sign_in_password" />
 
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </FrameLayout>
