@@ -9,6 +9,7 @@ import androidx.fragment.app.FragmentTransaction;
 import com.example.shopitee.HomeFragment;
 import com.example.shopitee.R;
 import com.example.shopitee.SignInFragment;
+import com.example.shopitee.fragments.CategoriesFragment;
 import com.google.android.material.navigation.NavigationView;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -123,9 +124,10 @@ public class SplashActivity extends AppCompatActivity
             mAuth.signOut();
             setFragment(new SignInFragment());
         } else if (id == R.id.categories){
-            Intent intent = new Intent(SplashActivity.this, CategoryActivity.class);
-            intent.putExtra("CategoryName", "SomeCategory");
-            startActivity(intent);
+//            Intent intent = new Intent(SplashActivity.this, CategoryActivity.class);
+//            intent.putExtra("CategoryName", "SomeCategory");
+//            startActivity(intent);
+            setFragment(CategoriesFragment.Companion.newInstance());
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
