@@ -18,8 +18,8 @@ class CategoryAdapter(private val categoryModelList: List<CategoryModel>) : Recy
     }
 
     override fun onBindViewHolder(viewHoldere: ViewHolder, postion: Int) {
-        val icon = categoryModelList[postion].categoryIconLink
-        val name = categoryModelList[postion].categoryName
+        val icon = categoryModelList[postion].image
+        val name = categoryModelList[postion].title
         viewHoldere.setCategory(name, postion)
         viewHoldere.apply {
             categoryName.text = name
