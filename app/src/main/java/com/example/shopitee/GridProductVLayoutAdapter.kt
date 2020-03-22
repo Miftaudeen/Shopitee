@@ -43,7 +43,6 @@ class GridProductVLayoutAdapter(var horizontalProductScrollModelList: List<Horiz
                runBlocking {
                    getDatabase(view.context
                            .applicationContext).cartDao().insert(ItemCartModel(
-                           image = currentItem.productImage,
                            name = currentItem.productTitle,
                            price = currentItem.productPrice
                    ))

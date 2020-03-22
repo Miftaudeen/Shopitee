@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import com.bumptech.glide.Glide
 import com.example.shopitee.CartAdapter.CartViewHolder
 import com.example.shopitee.models.ItemCartModel
 import kotlinx.android.synthetic.main.cart_item.view.*
@@ -23,7 +24,7 @@ class CartAdapter(private var dummyItems: List<ItemCartModel>) : RecyclerView.Ad
         cartViewHolder.apply {
             productName.text = currentItem.name
             productPrice.text = currentItem.price
-            image.setImageResource(currentItem.image)
+            Glide.with(cartViewHolder.itemView.context).load(currentItem.image).into(image)
 
         }
 
