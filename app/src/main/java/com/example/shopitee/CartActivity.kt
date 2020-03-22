@@ -17,6 +17,8 @@ class CartActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cart)
 
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
 
         val adapter = CartAdapter(dummyItems)
         recycle.adapter = adapter

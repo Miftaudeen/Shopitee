@@ -8,6 +8,11 @@
             android:id="@+id/nav_my_tailor"
             android:icon="@mipmap/my_tailor"
             android:title="Home" />
+
+        <item
+            android:id="@+id/categories"
+            android:title="Categories"
+            android:icon="@drawable/ic_baseline_view_list_24"/>
         <item
             android:id="@+id/nav_my_orders"
             android:icon="@mipmap/my_orders"

@@ -119,6 +119,10 @@ public class SplashActivity extends AppCompatActivity
         }else if(id == R.id.nav_sign_out){
             mAuth.signOut();
             setFragment(new SignInFragment());
+        } else if (id == R.id.categories){
+            Intent intent = new Intent(SplashActivity.this, CategoryActivity.class);
+            intent.putExtra("CategoryName", "SomeCategory");
+            startActivity(intent);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
