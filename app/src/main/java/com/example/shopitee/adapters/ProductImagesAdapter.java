@@ -1,4 +1,4 @@
-package com.example.shopitee;
+package com.example.shopitee.adapters;
 
 import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;

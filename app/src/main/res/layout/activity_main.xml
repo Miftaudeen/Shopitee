@@ -6,4 +6,4 @@
     android:layout_height="wrap_content"
     android:maxWidth="0dp"
     android:minWidth="0dp"
-    tools:context=".MainActivity" />
+    tools:context=".activities.MainActivity" />

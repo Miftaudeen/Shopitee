@@ -10,6 +10,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.shopitee.adapters.CategoryAdapter;
+import com.example.shopitee.adapters.HomePageAdapter;
 import com.example.shopitee.models.CategoryModel;
 import com.example.shopitee.models.HomePageModel;
 import com.example.shopitee.models.SliderModel;

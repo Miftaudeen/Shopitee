@@ -1,10 +1,12 @@
-package com.example.shopitee
+package com.example.shopitee.activities
 
 import android.os.Bundle
 import android.view.*
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.shopitee.adapters.CartAdapter
+import com.example.shopitee.R
 import com.example.shopitee.db.ShopiteeDatabase
 import com.example.shopitee.models.ItemCartModel
 import kotlinx.android.synthetic.main.activity_cart.*

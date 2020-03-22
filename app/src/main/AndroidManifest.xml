@@ -12,20 +12,20 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".CartActivity"
-            android:parentActivityName=".MainActivity"
+            android:name=".activities.CartActivity"
+            android:parentActivityName=".activities.MainActivity"
             android:theme="@style/AppTheme.Normal" />
         <activity android:name=".Viewall" />
         <activity android:name=".ProductDetailsActivity" />
-        <activity android:name=".CategoryActivity" />
+        <activity android:name=".activities.CategoryActivity" />
         <activity
-            android:name=".SplashActivity"
+            android:name=".activities.SplashActivity"
             android:label="@string/title_activity_splash"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".RegisterActivity" />
+        <activity android:name=".activities.RegisterActivity" />
         <activity
-            android:name=".MainActivity"
+            android:name=".activities.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/MainActivityTheme">
             <intent-filter>

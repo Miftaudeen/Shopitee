@@ -1,4 +1,4 @@
-package com.example.shopitee;
+package com.example.shopitee.adapters;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -7,6 +7,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.shopitee.HorizontalProductScrollModel;
+import com.example.shopitee.R;
 
 import java.util.List;
 

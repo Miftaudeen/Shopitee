@@ -1,4 +1,4 @@
-package com.example.shopitee;
+package com.example.shopitee.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,6 +8,7 @@ import androidx.appcompat.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.example.shopitee.R;
 import com.example.shopitee.models.HomePageModel;
 import com.example.shopitee.models.SliderModel;
 

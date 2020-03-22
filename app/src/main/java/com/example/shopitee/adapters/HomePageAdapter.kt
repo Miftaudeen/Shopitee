@@ -1,4 +1,4 @@
-package com.example.shopitee
+package com.example.shopitee.adapters
 
 import android.graphics.Color
 import android.os.Handler
@@ -15,6 +15,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager.widget.ViewPager
 import androidx.viewpager.widget.ViewPager.OnPageChangeListener
+import com.example.shopitee.HorizontalProductScrollModel
+import com.example.shopitee.R
 import com.example.shopitee.models.HomePageModel
 import com.example.shopitee.models.SliderModel
 import java.util.*

@@ -8,6 +8,7 @@ import androidx.appcompat.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.example.shopitee.adapters.HomePageAdapter;
 import com.example.shopitee.models.HomePageModel;
 import com.example.shopitee.models.SliderModel;
 

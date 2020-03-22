@@ -1,4 +1,4 @@
-package com.example.shopitee;
+package com.example.shopitee.adapters;
 
 import android.content.res.ColorStateList;
 import android.graphics.Color;
@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.example.shopitee.R;
 import com.example.shopitee.models.SliderModel;
 
 import java.util.List;

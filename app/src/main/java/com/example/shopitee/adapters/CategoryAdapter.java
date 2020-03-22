@@ -1,4 +1,4 @@
-package com.example.shopitee;
+package com.example.shopitee.adapters;
 
 import android.content.Intent;
 import androidx.annotation.NonNull;
@@ -9,6 +9,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.shopitee.R;
+import com.example.shopitee.activities.CategoryActivity;
 import com.example.shopitee.models.CategoryModel;
 
 import java.util.List;

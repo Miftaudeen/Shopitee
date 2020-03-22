@@ -1,4 +1,4 @@
-package com.example.shopitee
+package com.example.shopitee.adapters
 
 import android.graphics.Color
 import android.view.LayoutInflater
@@ -8,6 +8,8 @@ import android.widget.BaseAdapter
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import com.example.shopitee.HorizontalProductScrollModel
+import com.example.shopitee.R
 import com.example.shopitee.db.ShopiteeDatabase.Companion.getDatabase
 import com.example.shopitee.models.ItemCartModel
 import kotlinx.coroutines.runBlocking

@@ -22,12 +22,13 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.shopitee.activities.SplashActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-import static com.example.shopitee.RegisterActivity.onResetPasswordFragment;
+import static com.example.shopitee.activities.RegisterActivity.onResetPasswordFragment;
 
 
 /**
@@ -202,7 +203,7 @@ public class SignInFragment extends Fragment {
     }
     private void mainIntent()
     {
-        Intent mainIntent= new Intent(getActivity(),SplashActivity.class);
+        Intent mainIntent= new Intent(getActivity(), SplashActivity.class);
         startActivity(mainIntent);
         getActivity().finish();
     }

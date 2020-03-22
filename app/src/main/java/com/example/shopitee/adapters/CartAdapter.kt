@@ -1,4 +1,4 @@
-package com.example.shopitee
+package com.example.shopitee.adapters
 
 import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
@@ -7,7 +7,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import com.bumptech.glide.Glide
-import com.example.shopitee.CartAdapter.CartViewHolder
+import com.example.shopitee.R
+import com.example.shopitee.adapters.CartAdapter.CartViewHolder
 import com.example.shopitee.models.ItemCartModel
 import kotlinx.android.synthetic.main.cart_item.view.*
 

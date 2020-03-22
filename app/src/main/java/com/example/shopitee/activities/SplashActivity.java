@@ -1,4 +1,4 @@
-package com.example.shopitee;
+package com.example.shopitee.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,6 +6,9 @@ import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.example.shopitee.HomeFragment;
+import com.example.shopitee.R;
+import com.example.shopitee.SignInFragment;
 import com.google.android.material.navigation.NavigationView;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
