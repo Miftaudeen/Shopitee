@@ -6,12 +6,14 @@
         android:orderInCategory="100"
         android:icon="@mipmap/search"
         android:title="search"
+        android:visible="false"
         app:showAsAction="always" />
     <item
         android:id="@+id/splash_notification_icon"
         android:orderInCategory="100"
         android:icon="@mipmap/bell"
         android:title="notification"
+        android:visible="false"
         app:showAsAction="always" />
     <item
         android:id="@+id/splash_cart_icon"
