@@ -101,15 +101,15 @@ public class HomeFragment extends Fragment {
         List<HorizontalProductScrollModel> horizontalProductScrollModelList = new ArrayList<>();
 //        horizontalProductScrollModelList.add(
 //                new HorizontalProductScrollModel(R.mipmap.custom_error_icon, "3pc Suit",
-//                        "Black Cotton", "₦6550/-"));
-        horizontalProductScrollModelList.add(new HorizontalProductScrollModel(R.mipmap.banner, "Yoyo Cocktails", "All natural flavors", "₦6550/-"));
-        horizontalProductScrollModelList.add(new HorizontalProductScrollModel(R.mipmap.cabbage, "Sweet Cabbages", "Freshly harvested cabbages", "₦2550/-"));
-        horizontalProductScrollModelList.add(new HorizontalProductScrollModel(R.mipmap.milk_bottles, "Fresh Dairy", "Freshly milked bottles", "₦3550/-"));
-        horizontalProductScrollModelList.add(new HorizontalProductScrollModel(R.mipmap.eggs, "Egg basket", "Freshly laid eggs", "₦1250/-"));
-//        horizontalProductScrollModelList.add(new HorizontalProductScrollModel(R.mipmap.bell, "3pc Suit", "Black Cotton", "₦6550/-"));
-//        horizontalProductScrollModelList.add(new HorizontalProductScrollModel(R.mipmap.cart_black, "3pc Suit", "Black Cotton", "₦6550/-"));
-//        horizontalProductScrollModelList.add(new HorizontalProductScrollModel(R.mipmap.custom_error_icon, "3pc Suit", "Black Cotton", "₦6550/-"));
-//        horizontalProductScrollModelList.add(new HorizontalProductScrollModel(R.mipmap.cart_black, "3pc Suit", "Black Cotton", "₦6550/-"));
+//                        "Black Cotton", "6550"));
+        horizontalProductScrollModelList.add(new HorizontalProductScrollModel(R.mipmap.banner, "Yoyo Cocktails", "All natural flavors", "6550"));
+        horizontalProductScrollModelList.add(new HorizontalProductScrollModel(R.mipmap.cabbage, "Sweet Cabbages", "Freshly harvested cabbages", "2550"));
+        horizontalProductScrollModelList.add(new HorizontalProductScrollModel(R.mipmap.milk_bottles, "Fresh Dairy", "Freshly milked bottles", "3550"));
+        horizontalProductScrollModelList.add(new HorizontalProductScrollModel(R.mipmap.eggs, "Egg basket", "Freshly laid eggs", "1250"));
+//        horizontalProductScrollModelList.add(new HorizontalProductScrollModel(R.mipmap.bell, "3pc Suit", "Black Cotton", "6550"));
+//        horizontalProductScrollModelList.add(new HorizontalProductScrollModel(R.mipmap.cart_black, "3pc Suit", "Black Cotton", "6550"));
+//        horizontalProductScrollModelList.add(new HorizontalProductScrollModel(R.mipmap.custom_error_icon, "3pc Suit", "Black Cotton", "6550"));
+//        horizontalProductScrollModelList.add(new HorizontalProductScrollModel(R.mipmap.cart_black, "3pc Suit", "Black Cotton", "6550"));
 
         /////// Horizontal Product Layout
         ///////////////////////

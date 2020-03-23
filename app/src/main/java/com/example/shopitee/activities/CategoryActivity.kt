@@ -58,7 +58,7 @@ class CategoryActivity : AppCompatActivity() {
 
             override fun onBindViewHolder(holder: ItemHolder, position: Int, model: ItemModel) {
                 holder.apply {
-                    price.text = model.price
+                    price.text = "₦${model.price}"
                     name.text = model.title
                     Glide.with(this@CategoryActivity).load(model.image).into(image)
                 }

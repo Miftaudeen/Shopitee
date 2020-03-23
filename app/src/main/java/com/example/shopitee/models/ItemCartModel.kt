@@ -9,7 +9,7 @@ import java.util.*
 data class ItemCartModel(
         val image: String = "https://res.cloudinary.com/emkaydauda/image/upload/v1584222321/blue-rock-min.jpg",
         val name: String = "Milk",
-        val price: String = "₦1250/-",
+        val price: String = "₦1250",
         val created_at: Long = Calendar.getInstance().timeInMillis
 ) {
     @PrimaryKey(autoGenerate = true)
