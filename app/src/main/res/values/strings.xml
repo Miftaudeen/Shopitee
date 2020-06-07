@@ -10,4 +10,8 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string name="open_location_settings">Open Settings</string>
+    <string name="gps_network_not_enabled">Please Open Settings and enable GPS to use this Application</string>
+    <string name="banner_description">This is the banner for Shopitee</string>
+    <string name="title_activity_account">AccountActivity</string>
 </resources>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@+id/clear" android:title="Clear All" android:icon="@drawable/ic_delete" />
+    <item android:id="@+id/clear_some" android:title="Clear Selected Items" android:icon="@drawable/ic_delete" />
     <item android:id="@+id/checkout" android:title="Checkout All Items" android:icon="@drawable/ic_pay" />
 </menu>

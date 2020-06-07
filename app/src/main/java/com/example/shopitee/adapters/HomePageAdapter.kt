@@ -64,7 +64,7 @@ class HomePageAdapter(private val homePageModelList: List<HomePageModel>) : Recy
             HomePageModel.HORIZONTAL_PRODUCT_VIEW -> {
                 val horizontalLayoutTitle = homePageModelList[position].title
                 val horizontalProductScrollModelList = homePageModelList[position].horizontalProductScrollModelList
-                (viewHolder as HorizonatlProductViewHolder).setHorizontalProductLayout(horizontalProductScrollModelList, horizontalLayoutTitle)
+                (viewHolder as HorizontalProductViewHolder).setHorizontalProductLayout(horizontalProductScrollModelList, horizontalLayoutTitle)
             }
             HomePageModel.GRID_PRODUCT_VIEW -> {
                 val gridLayoutTitle = homePageModelList[position].title
@@ -165,7 +165,7 @@ class HomePageAdapter(private val homePageModelList: List<HomePageModel>) : Recy
         }
     }
 
-    inner class HorizonatlProductViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    inner class HorizontalProductViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val horizonatlLayoutTitle: TextView
         private val horizonatlLayoutViewAllBtn: Button
         private val horizontalRecyclerView: RecyclerView

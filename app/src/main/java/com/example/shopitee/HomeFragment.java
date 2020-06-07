@@ -40,7 +40,7 @@ public class HomeFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        categoryRecyclerView = view.findViewById(R.id.category_recylerview);
+        categoryRecyclerView = view.findViewById(R.id.home_category_recylerview);
         LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity());
         layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
         categoryRecyclerView.setLayoutManager(layoutManager);
@@ -53,11 +53,11 @@ public class HomeFragment extends Fragment {
         categoryModelList.add(new CategoryModel("link", "Designing"));
         categoryModelList.add(new CategoryModel("link", "T-Shirt Printing"));
         categoryModelList.add(new CategoryModel("link", "Casual Shawls"));
-        categoryModelList.add(new CategoryModel("link", "Home"));
-        categoryModelList.add(new CategoryModel("link", "Home"));
-        categoryModelList.add(new CategoryModel("link", "Home"));
-        categoryModelList.add(new CategoryModel("link", "Home"));
-        categoryModelList.add(new CategoryModel("link", "Home"));
+        categoryModelList.add(new CategoryModel("link", "Drinks"));
+        categoryModelList.add(new CategoryModel("link", "Food stuffs"));
+        categoryModelList.add(new CategoryModel("link", "Vegetables"));
+        categoryModelList.add(new CategoryModel("link", "Cooking Ingredients"));
+        categoryModelList.add(new CategoryModel("link", "Oils"));
 
         categoryAdapter = new CategoryAdapter(categoryModelList);
         categoryRecyclerView.setAdapter(categoryAdapter);
@@ -106,10 +106,10 @@ public class HomeFragment extends Fragment {
         horizontalProductScrollModelList.add(new HorizontalProductScrollModel(R.mipmap.cabbage, "Sweet Cabbages", "Freshly harvested cabbages", "2550"));
         horizontalProductScrollModelList.add(new HorizontalProductScrollModel(R.mipmap.milk_bottles, "Fresh Dairy", "Freshly milked bottles", "3550"));
         horizontalProductScrollModelList.add(new HorizontalProductScrollModel(R.mipmap.eggs, "Egg basket", "Freshly laid eggs", "1250"));
-//        horizontalProductScrollModelList.add(new HorizontalProductScrollModel(R.mipmap.bell, "3pc Suit", "Black Cotton", "6550"));
-//        horizontalProductScrollModelList.add(new HorizontalProductScrollModel(R.mipmap.cart_black, "3pc Suit", "Black Cotton", "6550"));
-//        horizontalProductScrollModelList.add(new HorizontalProductScrollModel(R.mipmap.custom_error_icon, "3pc Suit", "Black Cotton", "6550"));
-//        horizontalProductScrollModelList.add(new HorizontalProductScrollModel(R.mipmap.cart_black, "3pc Suit", "Black Cotton", "6550"));
+        horizontalProductScrollModelList.add(new HorizontalProductScrollModel(R.mipmap.bread, "Chocolate Bread", "A 1.5kg loaf of chocolate Bread", "650"));
+        horizontalProductScrollModelList.add(new HorizontalProductScrollModel(R.mipmap.banana, "Ripe Banana", "A bunch of ripe", "550"));
+        horizontalProductScrollModelList.add(new HorizontalProductScrollModel(R.mipmap.pasta, "Pasta", "A carton of Dangote Pasta", "4500"));
+        horizontalProductScrollModelList.add(new HorizontalProductScrollModel(R.mipmap.rice, "Rice", "50Kg bag of Nigerian rice", "20500"));
 
         /////// Horizontal Product Layout
         ///////////////////////

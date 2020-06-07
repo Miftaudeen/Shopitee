@@ -7,7 +7,7 @@
     tools:context=".HomeFragment">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/category_recylerview"
+        android:id="@+id/home_category_recylerview"
         android:layout_width="match_parent"
         android:background="@color/colorAccent"
         android:elevation="3dp"
@@ -24,7 +24,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/category_recylerview" />
+        app:layout_constraintTop_toBottomOf="@id/home_category_recylerview" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,6 +12,7 @@ import com.example.shopitee.HorizontalProductScrollModel
 import com.example.shopitee.R
 import com.example.shopitee.db.ShopiteeDatabase.Companion.getDatabase
 import com.example.shopitee.models.ItemCartModel
+import es.dmoral.toasty.Toasty
 import kotlinx.coroutines.runBlocking
 
 class GridProductVLayoutAdapter(var horizontalProductScrollModelList: List<HorizontalProductScrollModel>) : BaseAdapter() {
@@ -41,12 +42,13 @@ class GridProductVLayoutAdapter(var horizontalProductScrollModelList: List<Horiz
             productDescription.text = currentItem.productDescription
             productPrice.text = currentItem.productPrice
             view.setOnClickListener {
-                Toast.makeText(parent.context, "Here", Toast.LENGTH_SHORT).show()
+               Toasty.info(parent.context, "${currentItem.productTitle} added to cart.").show()
                runBlocking {
                    getDatabase(view.context
                            .applicationContext).cartDao().insert(ItemCartModel(
                            name = currentItem.productTitle,
-                           price = currentItem.productPrice
+                           price = currentItem.productPrice,
+                           image = currentItem.productImage
                    ))
                }
             }

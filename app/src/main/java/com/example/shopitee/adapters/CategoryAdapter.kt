@@ -43,11 +43,10 @@ class CategoryAdapter(private val categoryModelList: List<CategoryModel>) : Recy
         fun setCategory(name: String, position: Int) {
             categoryName.text = name
             itemView.setOnClickListener {
-                if (position != 0) {
+
                     val categoryIntent = Intent(itemView.context, CategoryActivity::class.java)
                     categoryIntent.putExtra("CategoryName", name)
                     itemView.context.startActivity(categoryIntent)
-                }
             }
         }
 

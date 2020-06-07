@@ -201,10 +201,12 @@ public class SignInFragment extends Fragment {
             Toast.makeText(getActivity(),"Incorrect email or password!", Toast.LENGTH_SHORT).show();
         }
     }
+
     private void mainIntent()
     {
         Intent mainIntent= new Intent(getActivity(), SplashActivity.class);
         startActivity(mainIntent);
         getActivity().finish();
     }
+
 }

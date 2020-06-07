@@ -12,12 +12,15 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.shopitee.R
+import com.example.shopitee.db.ShopiteeDatabase
+import com.example.shopitee.models.ItemCartModel
 import com.example.shopitee.models.ItemModel
 import com.firebase.ui.firestore.FirestoreRecyclerAdapter
 import com.firebase.ui.firestore.FirestoreRecyclerOptions
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.Query
 import kotlinx.android.synthetic.main.fragment_sign_in.*
+import kotlinx.coroutines.runBlocking
 
 class CategoryActivity : AppCompatActivity() {
     lateinit var categoryRecyclerView: RecyclerView
@@ -43,7 +46,7 @@ class CategoryActivity : AppCompatActivity() {
         categoryRecyclerView.layoutManager = LinearLayoutManager(this)
 
         val query = FirebaseFirestore.getInstance().collection("products")
-//                .whereEqualTo("category", title.toLowerCase())
+                .whereEqualTo("category", title.toLowerCase())
 
         val options = FirestoreRecyclerOptions.Builder<ItemModel>()
                 .setQuery(query, ItemModel::class.java)
@@ -61,6 +64,16 @@ class CategoryActivity : AppCompatActivity() {
                     price.text = "₦${model.price}"
                     name.text = model.title
                     Glide.with(this@CategoryActivity).load(model.image).into(image)
+
+                    itemView.setOnClickListener {
+                        runBlocking {
+                            ShopiteeDatabase.getDatabase(applicationContext).cartDao().insert(ItemCartModel(
+                                    name = model.title,
+                                    price = model.price,
+                                    image = model.image
+                            ))
+                        }
+                    }
                 }
             }
 

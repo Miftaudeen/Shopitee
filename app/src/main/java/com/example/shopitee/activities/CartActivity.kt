@@ -1,29 +1,45 @@
 package com.example.shopitee.activities
 
+import android.annotation.SuppressLint
+import android.content.Context
 import android.content.Intent
+import android.opengl.Visibility
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
+import android.widget.CheckBox
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.AppCompatCheckBox
 import androidx.recyclerview.widget.LinearLayoutManager
-import co.paystack.android.model.Card
-import com.example.shopitee.adapters.CartAdapter
+import androidx.recyclerview.widget.RecyclerView
 import com.example.shopitee.R
+import com.example.shopitee.adapters.CartAdapter
 import com.example.shopitee.db.ShopiteeDatabase
 import com.example.shopitee.models.ItemCartModel
 import com.flutterwave.raveandroid.RaveConstants
 import com.flutterwave.raveandroid.RavePayActivity
 import com.flutterwave.raveandroid.RavePayManager
 import com.google.firebase.auth.FirebaseAuth
+import com.pixplicity.easyprefs.library.Prefs
 import kotlinx.android.synthetic.main.activity_cart.*
 import kotlinx.coroutines.*
-import kotlin.random.Random
+import java.util.*
 
 
 class CartActivity : AppCompatActivity() {
-    val dummyItems = mutableListOf<ItemCartModel>()
+    val dummyItems = ArrayList<ItemCartModel>()
+    private val selectedItems = ArrayList<ItemCartModel>()
+    private lateinit var adapter: CartAdapter
+    private val listPersonsSelected //keep track of selected objects
+            : List<ItemCartModel>? = null
+    private val listSelectedRows: List<View>? = null
+    var deliveryFee = 0
 
+
+
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cart)
@@ -31,7 +47,9 @@ class CartActivity : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
 
-        val adapter = CartAdapter(dummyItems)
+
+
+        adapter = CartAdapter(dummyItems)
         recycle.adapter = adapter
         recycle.layoutManager = LinearLayoutManager(this)
         recycle.setHasFixedSize(true)
@@ -42,10 +60,19 @@ class CartActivity : AppCompatActivity() {
 
         GlobalScope.launch {
             val a = ShopiteeDatabase.getDatabase(applicationContext).cartDao().getEntireCart()
-
             withContext(Dispatchers.Main){
                 dummyItems.clear()
                 dummyItems.addAll(a)
+
+                if(dummyItems.size>0) {
+                    deliveryFee = 1000 * dummyItems.size
+                    locationDisplay.setVisibility(View.VISIBLE)
+                    locationDisplay.text = "Delivery fee is ₦${deliveryFee} " +
+                            "to ${Prefs.getString("userAddress", "Apo, Abuja")}"
+                }else{
+                    locationDisplay.visibility = View.GONE
+                }
+
                 adapter.notifyDataSetChanged()
                 Toast.makeText(this@CartActivity, "${a.size}", Toast.LENGTH_SHORT).show()
             }
@@ -64,26 +91,21 @@ class CartActivity : AppCompatActivity() {
             R.id.clear -> {
                 runBlocking {
                     ShopiteeDatabase.getDatabase(applicationContext).cartDao().deleteAll()
+                    locationDisplay.setVisibility(View.GONE)
                     recreate()
                 }
             }
 
-            R.id.checkout -> {
-//                val cardNumber = "4084084084084081"
-//                val expiryMonth = 11 //any month in the future
-//
-//                val expiryYear = 21 // any year in the future. '2018' would work also!
-//
-//                val cvv = "408" // cvv of the test card
-//
-//
-//                val card = Card(cardNumber, expiryMonth, expiryYear, cvv)
-//
-//                if (card.isValid){
-//
-//                }
+            R.id.clear_some -> {
+                runBlocking {
+                    adapter.deleteSelectedItems(applicationContext)
+                    recreate()
 
-                val amount = dummyItems.sumByDouble { cartItem ->
+                }
+            }
+
+            R.id.checkout -> {
+                val amount = deliveryFee + dummyItems.sumByDouble { cartItem ->
                     cartItem.price.toDouble()
                 }
 
@@ -137,4 +159,9 @@ class CartActivity : AppCompatActivity() {
             else -> super.onActivityResult(requestCode, resultCode, data)
         }
     }
+
 }
+
+
+
+
