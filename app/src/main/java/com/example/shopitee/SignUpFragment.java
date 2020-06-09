@@ -71,7 +71,7 @@ public class SignUpFragment extends Fragment {
 
         alreadyHaveAnAccount = view.findViewById(R.id.tv_sign_up_already_account);
 
-        parentFrameLayout = getActivity().findViewById(R.id.register_framlayout);
+        parentFrameLayout = getActivity().findViewById(R.id.register_framelayout);
         email = view.findViewById(R.id.sign_up_email);
         fullName = view.findViewById(R.id.sign_up_fullname);
         password = view.findViewById(R.id.sign_up_password);
