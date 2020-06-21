@@ -67,14 +67,13 @@ public class SignInFragment extends Fragment {
 
         forgotPassword =view.findViewById(R.id.sign_in_forget_password);
 
-        parentFrameLayout = getActivity().findViewById(R.id.register_framlayout);
+        parentFrameLayout = getActivity().findViewById(R.id.register_framelayout);
 
         email = view.findViewById(R.id.sign_in_email);
         password = view.findViewById(R.id.sign_in_password);
 
         progressBar = view.findViewById(R.id.signin_progreebar);
 
-        closebutton = view.findViewById(R.id.sign_in_close_btn);
         signInBtn = view.findViewById(R.id.sign_in_btn);
 
         firebaseAuth = FirebaseAuth.getInstance();
@@ -101,12 +100,6 @@ public class SignInFragment extends Fragment {
             }
         });
 
-        closebutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mainIntent();
-            }
-        });
 
         email.addTextChangedListener(new TextWatcher() {
             @Override

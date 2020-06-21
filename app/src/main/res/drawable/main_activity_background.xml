@@ -6,7 +6,7 @@
         </shape>
     </item>
     <item>
-        <bitmap android:src="@mipmap/shopitee_logo" android:gravity="center" />
+        <bitmap android:src="@mipmap/shopitee_logo" android:gravity="fill" />
     </item>
 
 </layer-list>

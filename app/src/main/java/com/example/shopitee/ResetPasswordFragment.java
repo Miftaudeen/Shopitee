@@ -68,7 +68,7 @@ public class ResetPasswordFragment extends Fragment {
         emailIconText=view.findViewById(R.id.forgot_pass_email_iconText);
         progressBar=view.findViewById(R.id.forgot_pass_progressBar);
 
-        parentFrameLayout=getActivity().findViewById(R.id.register_framlayout);
+        parentFrameLayout=getActivity().findViewById(R.id.register_framelayout);
 
         firebaseAuth=FirebaseAuth.getInstance();
 
