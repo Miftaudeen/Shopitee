@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        println(getDatabasePath("word_databse").absolutePath)
         firebaseAuth = FirebaseAuth.getInstance()
         SystemClock.sleep(3000)
 
